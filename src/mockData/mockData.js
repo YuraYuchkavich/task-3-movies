@@ -15,10 +15,10 @@ const createMovie = (name = '', genre = [], releaseDate = '', image = '') => {
   }
 
 export const getMockMovies = [
-    createMovie("Pulp Fiction", ["Action & Adventures"], 2004, image1),
-    createMovie("Bohemia Rapsody", ["Drama", "Biography", "Music"], 2003, image2),
-    createMovie("Kill Bill 2", ["Oskar winning movie"], 1994, image3),
-    createMovie("Avengers: Infinity War", ["Action & Adventures"], 2004, image4),
-    createMovie("Inception", ["Action & Adventures"], 2003, image5),
-    createMovie("Reservoir dogs", ["Oskar winning movie"], 1994, image6)
+    createMovie("Joker", ["Action"], 2004, image1),
+    createMovie("Slave", ["Comedy"], 2019, image2),
+    createMovie("Avengers: Infinity War", ["Action & Adventures"], 2016, image3),
+    createMovie("Aladin", ["Action & Adventures"], 2010, image4),
+    createMovie("Sonik", ["Action & Adventures"], 2003, image5),
+    createMovie("Greenland", ["Drama"], 2007, image6)
 ]
