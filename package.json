@@ -1,0 +1,53 @@
+{
+  "name": "task-3-movies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.dev.js --mode development",
+    "build": "webpack --mode production --config webpack.prod.js",
+    "postinstall": "link-module-alias"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuraYuchkavich/task-3-movies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuraYuchkavich/task-3-movies/issues"
+  },
+  "homepage": "https://github.com/YuraYuchkavich/task-3-movies#readme",
+  "devDependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "antd": "^4.5.4",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "link-module-alias": "^1.2.0",
+    "prop-types": "^15.7.2",
+    "style-loader": "^1.2.1",
+    "styled-components": "^5.1.1",
+    "uglify-js-plugin": "0.0.6",
+    "unused-files-webpack-plugin": "^3.4.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack-merge": "^5.1.1"
+  },
+  "_moduleAliases": {
+    "application": "src/application",
+    "components": "src/components",
+    "containers": "src/containers",
+    "constants": "src/constants"
+  }
+}
