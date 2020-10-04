@@ -3,7 +3,11 @@ import PropTypes from 'prop-types'
 
 const Input = (props) => { 
     return (
-        <input className={props.className} placeholder={props.placeholder}>
+        <input 
+            className={props.className}
+            placeholder={props.placeholder}
+            type={props.type}
+        >
             {props.children}
         </input>
     )
@@ -11,6 +15,7 @@ const Input = (props) => {
 
 Input.propTypes = {
     className: PropTypes.string,
+    type: PropTypes.string,
     children: PropTypes.element,
     placeholder: PropTypes.string
 }

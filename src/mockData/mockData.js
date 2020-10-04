@@ -16,7 +16,7 @@ const createMovie = (name = '', genre = [], releaseDate = '', image = '') => {
 
 export const getMockMovies = [
     createMovie("Joker", ["Action"], 2004, image1),
-    createMovie("Slave", ["Comedy"], 2019, image2),
+    createMovie("Slave", ["COMEDY"], 2019, image2),
     createMovie("Avengers: Infinity War", ["Action & Adventures"], 2016, image3),
     createMovie("Aladin", ["Action & Adventures"], 2010, image4),
     createMovie("Sonik", ["Action & Adventures"], 2003, image5),

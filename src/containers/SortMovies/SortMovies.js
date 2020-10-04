@@ -5,14 +5,17 @@ import Dropdown from '../../components/Dropdown'
 
 const sort =  ['RELEASE DATE', 'NAME', 'GENRE']
 
-const SortMovies = () => {
+const SortMovies = (props) => {
 
+    const sortedMovie = (e) => {
+        props.sorted(e.currentTarget[e.currentTarget.options.selectedIndex].innerText.toLowerCase())
+    }
     return (
         <Wrapper>
             <Text className='sort-movies'>
                 SORT BY
             </Text>
-            <Dropdown className='sort-dropdown' values={sort}/>
+            <Dropdown className='sort-dropdown' values={sort} select={sortedMovie}/>
         </Wrapper>
     )
 }

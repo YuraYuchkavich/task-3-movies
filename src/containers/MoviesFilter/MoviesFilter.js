@@ -4,13 +4,17 @@ import Button from '../../components/Button'
 
 const filters = ['ALL', 'DOCUMENTARY', 'COMEDY', 'HORROR', 'CRIME']
 
-const MoviesFilter = () => {
+const MoviesFilter = (props) => {
+    
+    const filtredMovie = (e) => {
+        props.filter(e.currentTarget.innerText);
+    }
 
     return (
         <Wrapper>
            {
                filters.map((item) => 
-                <Button  key={item} className={'button-filter'}>
+                <Button  key={item} className={'button-filter'} onClick={filtredMovie}>
                     {item}
                 </Button>
                )
