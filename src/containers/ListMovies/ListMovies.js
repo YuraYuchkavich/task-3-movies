@@ -13,7 +13,11 @@ const ListMovies  = (props) => {
                     No Movie Found
                 </Text> :
                 props.movies.map((movie) => (
-                    <CardMovie key={movie.name} movie={movie} />
+                    <CardMovie 
+                        key={movie.name}
+                        movie={movie} 
+                        openMovieDetails={props.openMovieDetails}
+                    />
                   ))
             }
         </Wrapper>

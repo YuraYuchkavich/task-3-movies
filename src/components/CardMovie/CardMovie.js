@@ -46,6 +46,10 @@ const CardMovie = (props) => {
         }
     }
 
+    const openMovieDetails = () => {
+        props.openMovieDetails(props.movie)
+    }
+
     return (
         <>
         <Wrapper>
@@ -53,7 +57,8 @@ const CardMovie = (props) => {
                 <Image  
                     alt = 'test'
                     src={props.movie.image || noImage}
-                ></Image>
+                    onClick={openMovieDetails}
+                />
                 <div className="mask" onClick={openMenu}>
                     <div onClick={openMenu}> </div>
                 </div>

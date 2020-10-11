@@ -5,7 +5,7 @@ import { getMockMovies } from '../../mockData/mockData'
 import MoviesFilter from '../MoviesFilter'
 import SortMovies from '../SortMovies'
 
-const MoviesPage = () => {
+const MoviesPage = (props) => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
@@ -42,7 +42,10 @@ const MoviesPage = () => {
                 <MoviesFilter filter={filter}></MoviesFilter>
                 <SortMovies sorted={sorted}></SortMovies>
             </div>
-            <ListMovies movies = {movies}></ListMovies>
+            <ListMovies 
+                openMovieDetails={props.openMovieDetails}
+                movies = {movies}>
+            </ListMovies>
         </Wrapper>
     )
 }

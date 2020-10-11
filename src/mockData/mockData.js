@@ -5,17 +5,19 @@ import image4 from "./mockImages/movie4.jpg";
 import image5 from "./mockImages/movie5.jpg";
 import image6 from "./mockImages/movie6.jpg";
 
-const createMovie = (name = '', genre = [], releaseDate = '', image = '') => {
+const createMovie = (name = '', genre = [], releaseDate = '', image = '', description = 'description', rating= '0') => {
       return {
       name: name,
       genre: genre,
       releaseDate: releaseDate,
-      image:image
+      image:image,
+      description: description,
+      rating: rating
     }
   }
 
 export const getMockMovies = [
-    createMovie("Joker", ["Action"], 2004, image1),
+    createMovie("Joker", ["Action"], 2004, image1, 'description', '5.3'),
     createMovie("Slave", ["COMEDY"], 2019, image2),
     createMovie("Avengers: Infinity War", ["Action & Adventures"], 2016, image3),
     createMovie("Aladin", ["Action & Adventures"], 2010, image4),
